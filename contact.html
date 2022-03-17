@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/style.css" defer>
+</head>
+
+<body>
+    <header>
+        <h1>Restaurant KEA</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="menu.html">Menu</a>
+            </li>
+            <li>
+                <a class="nav-active" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="main-contact view-ge">
+        <section class="wrapper">
+            <img src="img/map.jpg" alt="Map image">
+            <div class="content contact-content">
+                <address>
+                    Guldbergsgade 29<br>
+                    2200 Copenhagen<br>
+                </address><br>
+                <p>
+                    Phone no.: <a href="tel:20825370">20 82 53 70</a>
+                </p><br>
+                <p>
+                    E-mail: <a href="mailto:info@restaurantkea.dk">info@restaurantkea.dk</a>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <form action="mailto:info@restaurantkea.dk" method="POST">
+                <fieldset>
+                    <legend>Contact form</legend>
+                    <div>
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" name="name" required pattern="([A-Za-z-]+ )+[A-Za-z-]+">
+                    </div>
+                    <div>
+                        <label for="phone">Phone no.</label>
+                        <input type="text" id="phone" name="phone" required pattern="[0-9]{8}">
+                    </div>
+                    <div>
+                        <label for="mail">E-mail</label>
+                        <input type="email" id="mail" name="mail" required>
+                    </div>
+                    <div>
+                        <label for="personnr">Persons</label>
+                        <input type="number" id="personnr" name="personnr" value="2" required min="1" max="20">
+                    </div>
+                    <div>
+                        <label for="datetime">Date and time</label>
+                        <input type="datetime-local" id="datetime" name="datetime" required>
+                    </div>
+                    <div>
+                        <label for="info">Further information</label><br>
+                        <textarea id="info" name="info"></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <main class="main-contact view-xl">
+        <section class="wrapper">
+            <img src="img/map.jpg" alt="Map image">
+            <div class="content contact-content">
+                <div>
+                    <address>
+                    Guldbergsgade 29<br>
+                    2200 Copenhagen<br>
+                </address><br>
+                    <p>
+                        Phone no.: <a href="tel:20825370">20 82 53 70</a>
+                    </p><br>
+                    <p>
+                        E-mail: <a href="mailto:info@restaurantkea.dk">info@restaurantkea.dk</a>
+                    </p>
+                </div>
+                <div>
+                    <form action="mailto:info@restaurantkea.dk" method="POST">
+                        <fieldset>
+                            <legend>Contact form</legend>
+                            <div>
+                                <label for="name">Full name</label>
+                                <input type="text" id="name" name="name" required pattern="([A-Za-z-]+ )+[A-Za-z-]+">
+                            </div>
+                            <div>
+                                <label for="phone">Phone no.</label>
+                                <input type="text" id="phone" name="phone" required pattern="[0-9]{8}">
+                            </div>
+                            <div>
+                                <label for="mail">E-mail</label>
+                                <input type="email" id="mail" name="mail" required>
+                            </div>
+                            <div>
+                                <label for="personnr">Persons</label>
+                                <input type="number" id="personnr" name="personnr" value="2" required min="1" max="20">
+                            </div>
+                            <div>
+                                <label for="datetime">Date and time</label>
+                                <input type="datetime-local" id="datetime" name="datetime" required>
+                            </div>
+                            <div>
+                                <label for="info">Further information</label><br>
+                                <textarea id="info" name="info"></textarea>
+                            </div>
+                            <button type="submit">Send</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <p>2022 © Alexandra Meszaros</p>
+    </footer>
+</body>
+
+</html>

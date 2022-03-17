@@ -1,0 +1,281 @@
+body {
+    font-family: 'Arial';
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #EA5047;
+    --blue: #26354B;
+    --beige: #EFD1A1;
+    --grey: #D3D3D3;
+    --yellow: #FAFAD1;
+    --space-xs: .5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* --- GENERAL LAYOUT ---  */
+
+.view-xl {
+    display: none;
+}
+
+.view-ge {
+    display: block
+}
+
+@media (min-width: 1350px) {
+    .view-xl {
+        display: block;
+    }
+    .view-ge {
+        display: none
+    }
+}
+
+section {
+    margin: var(--space-sm)
+}
+
+.wrapper {
+    display: block
+}
+
+.content {
+    display: inline-block
+}
+
+.wrapper img {
+    display: inline-block;
+    margin-bottom: var(--space-xs)
+}
+
+h1 {
+    background-color: var(--orange);
+    color: white;
+    padding: var(--space-xs) var(--space-sm);
+}
+
+@media (min-width: 768px) {
+    .content.sm {
+        width: 45%;
+    }
+    .wrapper.sm {
+        overflow: auto;
+    }
+    .wrapper.sm img {
+        margin-top: 0;
+        float: right;
+        width: 50%;
+        margin-left: var(--space-sm);
+    }
+}
+
+@media (min-width: 1024px) {
+    .content {
+        width: 45%;
+    }
+    .wrapper {
+        overflow: auto;
+    }
+    .wrapper img {
+        margin-top: 0;
+        float: right;
+        width: 50%;
+        margin-left: var(--space-sm);
+    }
+}
+
+
+/* --- NAVIGATION  --- */
+
+nav {
+    background-color: var(--blue);
+    padding: 0;
+}
+
+nav ul {
+    display: inline-block;
+    width: 100%;
+}
+
+nav ul li {
+    font-weight: bold;
+    text-align: center;
+    padding: var(--space-xs) 0;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 0.5px solid white;
+}
+
+nav ul li:last-of-type {
+    border-bottom: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-active {
+    color: var(--beige);
+    font-size: 1.2rem;
+}
+
+@media (min-width: 450px) {
+    nav ul {
+        margin-left: var(--space-sm)
+    }
+    nav ul li {
+        display: inline-block;
+        /* organize nav items to inline */
+        width: auto;
+        border: none;
+        margin-right: var(--space-md)
+    }
+}
+
+
+/* --- HOME PAGE ---  */
+
+.main-home .wrapper .content ul {
+    margin: var(--space-xs);
+}
+
+.main-home .wrapper .content ul li {
+    color: var(--orange);
+    font-weight: bold;
+    margin-top: var(--space-xs);
+}
+
+blockquote {
+    background: var(--grey);
+    padding: .8rem;
+    margin: var(--space-sm);
+}
+
+cite {
+    margin-left: 2rem;
+}
+
+
+/* --- MENU PAGE --- */
+
+.main-menu .menuitem-container {
+    background-color: var(--yellow);
+    border: 1px solid var(--blue);
+    margin: var(--space-sm);
+    padding: var(--space-xs)
+}
+
+.menuitem-title {
+    margin-bottom: var(--space-xs)
+}
+
+.menuitem-text {
+    text-align: justify;
+}
+
+.menuitem-price {
+    background-color: var(--orange);
+    border: 5px solid var(--blue);
+    padding: var(--space-xs);
+    margin-top: var(--space-xs);
+    color: white;
+    font-weight: bold;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+
+/* --- CONTACT PAGE --- */
+
+address {
+    font-style: normal;
+}
+
+.main-contact .wrapper img {
+    border: 1px solid var(--blue);
+    padding: var(--space-xs);
+}
+
+.contact-content p a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.contact-content div:first-of-type {
+    margin-bottom: var(--space-sm)
+}
+
+fieldset {
+    padding: var(--space-xs);
+}
+
+fieldset input,
+fieldset textarea {
+    width: 100%;
+    display: block;
+}
+
+fieldset div:nth-of-type(4) input {
+    width: 20%;
+}
+
+fieldset div:nth-of-type(5) input {
+    width: 70%;
+}
+
+fieldset div {
+    margin-bottom: var(--space-xs)
+}
+
+fieldset button {
+    margin-top: var(--space-xs);
+    padding: var(--space-xs) var(--space-sm)
+}
+
+@media (min-width: 1400px) {
+    fieldset input {
+        display: inline-block;
+        width: 79%;
+    }
+    label {
+        display: inline-block;
+        width: 20%;
+    }
+    fieldset div:nth-of-type(6) label {
+        width: 100%;
+    }
+}
+
+
+/* --- FOOTER --- */
+
+footer {
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    padding: var(--space-xs);
+    width: 100%;
+}
